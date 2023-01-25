@@ -16,7 +16,7 @@ namespace lab5ex4
              */
             Console.WriteLine("Intriduceti textul: ");
             var text = Console.ReadLine();
-            CountLetter(text);
+            CountLetter(text.ToLower());
         }
 
         static string CountLetter(string text)

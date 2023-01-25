@@ -22,7 +22,7 @@ namespace lab5ex7
             {
                 for(var i=0; i < primulSir.Length; i++)
                 {
-                    if (alDoileaSir.Contains(primulSir[i]))
+                    if (alDoileaSir.ToLower().Contains(primulSir[i].ToString().ToLower()))
                     {
                         pozitiv++;
                     }
@@ -44,7 +44,9 @@ namespace lab5ex7
             else
             {
                 Console.WriteLine("Nu este anagrama");
-            }           
+            }
+
+            // RUINAT si rutina
         }
     }
 }
